@@ -1,0 +1,56 @@
+
+> javascript-lab@1.0.0 test
+> mocha --timeout 5000 -R mocha-multi --reporter-options spec=-,json=.results.json
+
+
+
+  index.js
+    1) has a function expression called divide
+    2) divide divides 2000 by 100
+    3) has an arrow function called square
+    4) square arrow function takes one parameter and multiplies it times itself
+    5) has an arrow function called add
+    6) add arrow function takes two parameters and adds them together
+
+
+  0 passing (264ms)
+  6 failing
+
+  1) index.js
+       has a function expression called divide:
+     ReferenceError: divide is not defined
+      at Context.<anonymous> (test/indexTest.js:5:12)
+      at process.processImmediate (node:internal/timers:476:21)
+
+  2) index.js
+       divide divides 2000 by 100:
+     ReferenceError: divide is not defined
+      at Context.<anonymous> (test/indexTest.js:11:5)
+      at process.processImmediate (node:internal/timers:476:21)
+
+  3) index.js
+       has an arrow function called square:
+     ReferenceError: square is not defined
+      at Context.<anonymous> (test/indexTest.js:15:12)
+      at process.processImmediate (node:internal/timers:476:21)
+
+  4) index.js
+       square arrow function takes one parameter and multiplies it times itself:
+     ReferenceError: square is not defined
+      at Context.<anonymous> (test/indexTest.js:20:5)
+      at process.processImmediate (node:internal/timers:476:21)
+
+  5) index.js
+       has an arrow function called add:
+     ReferenceError: add is not defined
+      at Context.<anonymous> (test/indexTest.js:24:12)
+      at process.processImmediate (node:internal/timers:476:21)
+
+  6) index.js
+       add arrow function takes two parameters and adds them together:
+     ReferenceError: add is not defined
+      at Context.<anonymous> (test/indexTest.js:30:5)
+      at process.processImmediate (node:internal/timers:476:21)
+
+
+
